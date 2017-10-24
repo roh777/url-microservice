@@ -9,7 +9,7 @@ A Microservice that can be used to generate short urls corresponding to long tir
 
 ## Example
 
-* https://six-lightning.glitch.me/new/https://reddit.com/r/india request to server.
+* `https://six-lightning.glitch.me/new/https://reddit.com/r/india` request to server.
 
 * response 
  ```JSON
