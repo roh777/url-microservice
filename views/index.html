@@ -1,16 +1,7 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
-<!-- pug: https://pugjs.org/ -->
-<!-- haml: http://haml.info/ -->
-<!-- hbs(handlebars): http://handlebarsjs.com/ -->
-
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Glitch!</title>
+    <head>
+    <title>url shortner Microservice</title>
     <meta name="description" content="A cool thing made with Glitch">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
@@ -18,37 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
+
   <body>
-    <header>
-      <h1>
-        A Dream of the Future
-      </h1>
-    </header>
+    
+  
 
-    <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
-      </form>
-      <section class="dreams">
-        <ul id="dreams">
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <a href="https://glitch.com">
-        Remix this in Glitch
-      </a>
-    </footer>
-
-    <!-- Your web-app is https, so your scripts need to be too -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
-
+<div>
+    <h1 id="url-shortner-microservice">URL Shortner Microservice</h1>
+    <p>A Microservice that can be used to generate short urls corresponding to long tiresom urls.</p>
+    <h3 id="api-usage">API Usage</h3>
+    <ul>
+    <li><code>/new/{your URL goes here}</code> to shorten the url.</li>
+    <li>the output will be a JSON object with long_url and short_urls respectively.</li>
+    </ul>
+    <h2 id="example">Example</h2>
+    <ul>
+    <li><p><pre>https://six-lightning.glitch.me/new/https://reddit.com/r/india</pre>request to server.</p>
+    </li>
+    <li><p>response </p>
+    <pre><code class="lang-JSON"> 
+    {
+       &quot;short_url&quot;:&quot;https://six-lightning.glitch.me/p1AmN&quot;,
+       &quot;original_url&quot;:&quot;https://reddit.com/r/india&quot;
+     }
+    </code></pre>
+      </li>
+    </ul>
+    </div>
+  
   </body>
 </html>
+    
